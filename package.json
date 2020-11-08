@@ -1,0 +1,44 @@
+{
+	"name": "file-storage",
+	"version": "1.0.0",
+	"description": "React Node files storage App",
+	"main": "server.js",
+	"scripts": {
+		"server": "nodemon server.js",
+		"client": "npm run start --prefix client",
+		"seeder": "node app/models/seeder",
+		"start": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"keywords": [
+		"client-server application",
+		"SPA",
+		"react",
+		"nodejs",
+		"sequelize",
+		"JWT",
+		"file upload"
+	],
+	"author": "Oleksii Fedorenko <alavir.web.dev@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-jwt": "^6.0.0",
+		"express-validator": "^5.3.1",
+		"faker": "^5.1.0",
+		"filesize": "^6.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"morgan": "^1.10.0",
+		"multer": "^1.4.2",
+		"mysql2": "^2.2.5",
+		"nodemailer": "^6.4.14",
+		"sequelize": "^6.3.5",
+		"slugify": "^1.4.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alavir-ua/filestorage.git"
+	}
+}
