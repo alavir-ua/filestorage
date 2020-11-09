@@ -150,7 +150,7 @@ const UserDashboard = () => {
       </Fragment>
     ) : (
       <div className="input-group">
-        <h5>No files yet...</h5>
+        <h5>No users yet...</h5>
       </div>
     )
   )
